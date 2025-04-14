@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>LA ESTANCIA</title>
+  <link rel="icon" href="la estan.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #800000; /* Corinto */
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 0;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+
+    hr {
+      width: 80%;
+      margin: 20px auto;
+      border: 1px solid white;
+    }
+
+    a {
+      display: inline-block;
+      background-color: rgb(25, 75, 58);
+      color: #800000;
+      padding: 12px 25px;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background-color: #7a1b1b;
+      transform: scale(1.05);
+    }
+
+    /* Estilo para los iconos */
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      font-size: 35px;
+      margin: 10px;
+      color: rgb(8, 8, 8);
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+      color: #d61010;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="la estan.png" alt="Logo Restaurante">
+    <h1>SOMOS UN RESTAURANTE FAMILIAR</h1>
+    <hr>
+    <a href="pagina2.html">COMPRAR</a>
+    <a href="pagina3.html">VER MENÚ</a>
+
+    <!-- Sección de íconos de redes sociales -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+          <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10zm-6 0h-2c0 1.74-.79 3.39-2 4.4V17h4l-1 4h-3v8h-4v-8h-3v-4h3v-3c0-3.31 2.69-6 6-6h4v4h-4c-1.1 0-2 .9-2 2v2h4l-1 4h-3c-1.21-1.01-2-2.66-2-4.4V12z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+          <path d="M12 0c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm0 1.5c-2.47 0-4.5 2.03-4.5 4.5s2.03 4.5 4.5 4.5 4.5-2.03 4.5-4.5-2.03-4.5-4.5-4.5zm-7.5 6c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm3.5 3c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5.22-.5.5-.5zM12 7.5c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5zm7.5 6c-.28 0-.5.22-.5.5s.22.5.5.5c1.66 0 3-1.34 3-3s-1.34-3-3-3z"/>
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+          <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12c5.26 0 9.72-3.41 11.19-8.08-.05-.35-.19-.69-.35-.97-.33-.43-.7-.78-1.13-1.15-.18-.18-.38-.37-.6-.53-.35-.26-.72-.49-1.1-.71-.38-.21-.75-.44-1.14-.63-.31-.14-.63-.27-.95-.39-.65-.23-1.29-.46-1.94-.69-.57-.2-1.13-.41-1.69-.62-.19-.07-.39-.15-.58-.22-.61-.24-1.21-.49-1.82-.74-.52-.21-1.02-.44-1.53-.66-.35-.16-.69-.33-1.04-.49-.68-.28-1.34-.57-2.01-.86-.66-.3-1.31-.61-1.98-.92-.27-.12-.54-.23-.81-.35-.83-.33-1.67-.67-2.52-1-1.02-.43-1.96-.92-2.89-1.4-1.1-.51-2.18-.97-3.28-1.46C10.4 3.29 11.21 3 12 3s1.6.29 2.52.86c1.1.49 2.18.95 3.28 1.46 1.21.48 2.12.97 2.89 1.4.85.33 1.7.67 2.52 1 2.99 1.33 5.71 3.5 7.52 6.34-.55.8-1.2 1.56-1.85 2.31-1.1 1.1-2.29 2.14-3.53 3.14-1.61 1.24-3.3 2.4-5.11 3.58-.58.39-1.18.77-1.78 1.17-.87.53-1.74 1.08-2.61 1.63-.76.48-1.51.97-2.26 1.47-1.28.9-2.5 1.83-3.72 2.77-.68.49-1.31 1.03-1.96 1.57-.26-.73-.51-1.47-.76-2.2-.11-.35-.22-.69-.34-1.03-.04-.09-.07-.18-.11-.27-.04-.08-.08-.16-.13-.24-.06-.1-.12-.21-.19-.31-.22-.35-.46-.68-.72-1-.51-.68-1.02-1.35-1.53-2.01C12.06 4.3 12 4.15 12 4V0z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+</body>
+</html>
